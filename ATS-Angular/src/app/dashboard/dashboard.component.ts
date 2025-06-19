@@ -16,7 +16,9 @@ export class DashboardComponent implements OnInit {
   public userName: string = 'Usuario';
 
   ngOnInit() {
-    this.userName = localStorage.getItem('username') || 'Usuario';
+    if (typeof window !== 'undefined') {
+      this.userName = localStorage.getItem('username') || 'Usuario';
+    }
   }
 
   public totalAttendance = 70;

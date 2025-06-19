@@ -86,8 +86,12 @@ export class UsersComponent implements OnInit {
   loggedInUserRole: string = '';
 
   ngOnInit(): void {
-    const token = localStorage.getItem('authToken');
-    const userRole = localStorage.getItem('userRole');
+    let token: string | null = null;
+    let userRole: string | null = null;
+    if (typeof window !== 'undefined') {
+      token = localStorage.getItem('authToken');
+      userRole = localStorage.getItem('userRole');
+    }
     if (token) {
       this.http
         .get<{ users: any[], loggedInUser: string, loggedInUserRole: string }>(
@@ -164,14 +168,22 @@ export class UsersComponent implements OnInit {
   showAddUserDialog(): void {
     this.dialogHeader = 'Añadir Usuario';
     this.selectedUser = { Name: '', Email: '', Status: '' };
-    this.setRoleOptions(localStorage.getItem('userRole') || '');
+    let userRole = '';
+    if (typeof window !== 'undefined') {
+      userRole = localStorage.getItem('userRole') || '';
+    }
+    this.setRoleOptions(userRole);
     this.displayDialog = true;
   }
 
   editUser(user: any): void {
     this.dialogHeader = 'Editar Usuario';
     this.selectedUser = { ...user };
-    this.setRoleOptions(localStorage.getItem('userRole') || '');
+    let userRole = '';
+    if (typeof window !== 'undefined') {
+      userRole = localStorage.getItem('userRole') || '';
+    }
+    this.setRoleOptions(userRole);
     this.displayDialog = true;
   }
 
