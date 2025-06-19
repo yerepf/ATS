@@ -32,8 +32,8 @@ ATS (Attendance Tracking System) es una solución integral para la gestión de a
 
 **Clonar el repositorio**
 
-        git clone https://github.com/tu-usuario/ats-monorepo.git
-        cd ats-monorepo
+        git clone https://github.com/yerepf/ats.git
+        cd ats
 
 ## 📄 Licencia
 
