@@ -1,1 +1,29 @@
-<p>dashboard works!</p>
+
+
+<div class="container mx-auto mt-8">
+      <header class="mb-6">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <h1 class="font-bold text-4xl text-gray-800">Bienvenido <span class="text-red-600">{{ userName }}</span></h1>
+                </div>
+        </header>
+        <main class="">
+                <article class="grid grid-cols-2 sm:grid-cols-3 gap-4 py-4">
+                        <section class="item p-4 bg-white rounded-lg shadow-md flex justify-center items-center cursor-pointer hover:scale-105 transform transition-transform duration-200 active:scale-95" (click)="onItemClick(1)">
+                                <p class="text-center text-2xl">Asistencias totales: <span class="text-blue-600 font-bold">{{ totalAttendance }}%</span></p>
+                        </section>
+                        <section class="item p-4 bg-white rounded-lg shadow-md flex justify-center items-center cursor-pointer hover:scale-105 transform transition-transform duration-200 active:scale-95" (click)="onItemClick(2)">
+                                <p class="text-center text-2xl">Ausencias totales: <span class="text-red-600 font-bold">{{ totalAbsences }}%</span></p>
+                        </section>
+                        <section class="item p-4 bg-white rounded-lg shadow-md flex justify-center items-center cursor-pointer hover:scale-105 transform transition-transform duration-200 active:scale-95" (click)="onItemClick(3)">
+                                <p class="text-center text-2xl">Excusas totales: <span class="text-green-600 font-bold">{{ AmountExcuses }}%</span></p>
+                        </section>
+                </article>
+                <article>
+                        <section class="item p-4 bg-white rounded-lg shadow-md">
+                                <div class="chart-container">
+                                        <app-chart></app-chart>
+                                </div>
+                        </section>
+                </article>
+        </main>
+</div>

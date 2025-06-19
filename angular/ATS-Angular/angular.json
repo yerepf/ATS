@@ -25,9 +25,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css", 
+              "node_modules/primeng/resources/primeng.min.css"
             ],
-            "scripts": [],
+            "scripts": ["node_modules/chart.js/dist/chart.umd.js"],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {

@@ -8,6 +8,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { Router } from 'express';
 import exp from 'constants';
 import path from 'path';
+import { StudentsComponent } from './students/students.component';
+import { ExcusesComponent } from './excuses/excuses.component';
+import { UsersComponent } from './users/users.component';
+import { InstitutionsComponent } from './institutions/institutions.component';
+import { DistrictsComponent } from './districts/districts.component';
 
 export const routes: Routes = [
     {
@@ -29,6 +34,41 @@ export const routes: Routes = [
         component: MainlayoutComponent,
         children: [
             { path: '', component: AttendanceComponent }
+        ]
+    },
+    {
+        path: 'students', 
+        component: MainlayoutComponent,
+        children: [
+            { path: '', component: StudentsComponent }
+        ]
+    },
+    {
+        path: 'excuses', 
+        component: MainlayoutComponent,
+        children: [
+            { path: '', component: ExcusesComponent }
+        ]
+    },
+    {
+        path: 'users', 
+        component: MainlayoutComponent,
+        children: [
+            { path: '', component: UsersComponent }
+        ]
+    },
+    {
+        path: 'institutions', 
+        component: MainlayoutComponent,
+        children: [
+            { path: '', component: InstitutionsComponent }
+        ]
+    },
+    {
+        path: 'districts', 
+        component: MainlayoutComponent,
+        children: [
+            { path: '', component: DistrictsComponent }
         ]
     }
 ];
