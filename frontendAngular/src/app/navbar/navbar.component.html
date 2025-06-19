@@ -1,0 +1,47 @@
+<div class="container p-3 bg-white shadow-sm max-w-full">
+    <nav class="navbar flex justify-between items-center">
+
+        <button
+            class="lg:hidden text-[#C44536] focus:outline-none p-2 rounded-md hover:bg-gray-100"
+            (click)="sidebarVisible = true" 
+            aria-label="Open Menu"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <div class="buttons hidden lg:flex flex-wrap gap-5">
+            <button class="bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/dashboard']"><b>Tablero</b></button>
+            <button *ngIf="isModuleVisible(['AdminApp', 'AdminMinisterio', 'AdminDistrito'])" class="bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/users']"><b>Usuarios</b></button>
+            <button *ngIf="isModuleVisible(['AdminApp', 'AdminMinisterio'])" class="bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/districts']"><b>Distritos</b></button>
+            <button *ngIf="isModuleVisible(['AdminApp', 'AdminMinisterio', 'AdminDistrito'])" class="bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/institutions']"><b>Instituciones</b></button>
+            <button *ngIf="isModuleVisible(['AdminInstitucion', 'Profesor', 'PersonalApoyo'])" class="bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/attendance']"><b>Asistencia</b></button>
+            <button *ngIf="isModuleVisible(['AdminInstitucion', 'Profesor', 'PersonalApoyo'])" class="bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/excuses']" (click)="sidebarVisible = false"><b>Excusas</b></button>
+            <button *ngIf="isModuleVisible(['AdminInstitucion', 'Profesor', 'PersonalApoyo'])" class="bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/students']" (click)="sidebarVisible = false"><b>Estudiantes</b></button>
+            <button class="bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" (click)="logout()"><b>Salir</b></button>
+        </div>
+
+        <div class="logo flex items-center gap-4">
+            <img src="../../favicon.ico" alt="Logo" class="h-16 w-16 rounded-full shadow-md" />
+            <h2 class="font-mono font-bold text-lg">DATASOFT</h2>
+        </div>
+    </nav>
+</div>
+
+<p-sidebar [(visible)]="sidebarVisible" position="left" appendTo="body">
+    <div class="flex flex-col gap-4 p-4">
+        <h3 class="font-bold mb-4 text-xl">Menú</h3>
+
+        <button class="w-full text-left bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/dashboard']" (click)="sidebarVisible = false"><b>Tablero</b></button>
+        <button *ngIf="isModuleVisible(['AdminApp', 'AdminMinisterio', 'AdminDistrito'])" class="w-full text-left bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/users']" (click)="sidebarVisible = false"><b>Usuarios</b></button>
+        <button *ngIf="isModuleVisible(['AdminApp', 'AdminMinisterio'])" class="w-full text-left bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/districts']" (click)="sidebarVisible = false"><b>Distritos</b></button>
+        <button *ngIf="isModuleVisible(['AdminApp', 'AdminMinisterio', 'AdminDistrito'])" class="w-full text-left bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/institutions']" (click)="sidebarVisible = false"><b>Instituciones</b></button>
+        <button *ngIf="isModuleVisible(['AdminInstitucion', 'Profesor', 'PersonalApoyo'])" class="w-full text-left bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/attendance']" (click)="sidebarVisible = false"><b>Asistencia</b></button>
+        <button *ngIf="isModuleVisible(['AdminInstitucion', 'Profesor', 'PersonalApoyo'])" class="w-full text-left bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/excuses']" (click)="sidebarVisible = false"><b>Excusas</b></button>
+        <button *ngIf="isModuleVisible(['AdminInstitucion', 'Profesor', 'PersonalApoyo'])" class="w-full text-left bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" [routerLink]="['/students']" (click)="sidebarVisible = false"><b>Estudiantes</b></button>
+        <button class="w-full text-left bg-white text-[#C44536] border border-[#C44536] px-5 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-[#C44536] hover:text-white focus:outline-none focus:ring-1 focus:ring-[#C44536] focus:ring-opacity-50" (click)="logout(); sidebarVisible = false;"><b>Salir</b></button>
+    </div>
+</p-sidebar>
+
+
