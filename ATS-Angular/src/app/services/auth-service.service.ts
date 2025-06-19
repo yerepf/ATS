@@ -46,20 +46,22 @@ export class AuthServiceService {
       // Verificar que la respuesta contiene el token y el usuario
       if (response && response.token && response.user) {
         console.log('Login successful', response);
-        localStorage.setItem('authToken', response.token);
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('authToken', response.token);
 
-        // Almacenar información del usuario
-        const user = response.user;
-        localStorage.setItem('userRole', user.role);
-        localStorage.setItem('username', user.username);
-        if (user.institutionId) {
-        localStorage.setItem('institution', user.institutionId.toString());
-        }
-        if (user.districtId) {
-        localStorage.setItem('district', user.districtId.toString());
-        }
-        if (user.isMinistryUser !== undefined) {
-        localStorage.setItem('isMinistryUser', user.isMinistryUser.toString());
+          // Almacenar información del usuario
+          const user = response.user;
+          localStorage.setItem('userRole', user.role);
+          localStorage.setItem('username', user.username);
+          if (user.institutionId) {
+            localStorage.setItem('institution', user.institutionId.toString());
+          }
+          if (user.districtId) {
+            localStorage.setItem('district', user.districtId.toString());
+          }
+          if (user.isMinistryUser !== undefined) {
+            localStorage.setItem('isMinistryUser', user.isMinistryUser.toString());
+          }
         }
         return true; // Indicar éxito
       } else {

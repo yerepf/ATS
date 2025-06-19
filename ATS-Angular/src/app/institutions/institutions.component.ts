@@ -84,7 +84,10 @@ export class InstitutionsComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    const token = localStorage.getItem('authToken');
+    let token: string | null = null;
+    if (typeof window !== 'undefined') {
+      token = localStorage.getItem('authToken');
+    }
     if (token) {
       this.http
         .get<{ institutions: any[] }>(

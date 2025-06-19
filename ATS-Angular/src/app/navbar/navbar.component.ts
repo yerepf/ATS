@@ -23,9 +23,11 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('ngOnInit ejecutado, líneas de localStorage comentadas temporalmente');
-    this.userRole = localStorage.getItem('userRole') || null;
-    if (!this.userRole) {
-    this.userRole = localStorage.getItem('userRole') || null;
+    if (typeof window !== 'undefined') {
+      this.userRole = localStorage.getItem('userRole') || null;
+      if (!this.userRole) {
+        this.userRole = localStorage.getItem('userRole') || null;
+      }
     }
   }
 
@@ -34,8 +36,10 @@ export class NavbarComponent implements OnInit {
   }
 
   logout() {
-    localStorage.removeItem('userRole');
-    localStorage.removeItem('token');
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('userRole');
+      localStorage.removeItem('token');
+    }
     this.router.navigate(['/']); // Redirige al usuario a la raíz después de cerrar sesión
   }
 }
