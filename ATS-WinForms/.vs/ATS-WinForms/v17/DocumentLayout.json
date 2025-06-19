@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ats-winforms\\sesionactual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|solutionrelative:ats-winforms\\sesionactual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|c:\\users\\elvin\\onedrive\\desktop\\attendance-tracking-system\\attendance-tracking-system\\winforms\\ats-winforms\\ats-winforms\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|solutionrelative:ats-winforms\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ats-winforms\\huella.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|solutionrelative:ats-winforms\\huella.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|c:\\users\\elvin\\onedrive\\desktop\\attendance-tracking-system\\attendance-tracking-system\\winforms\\ats-winforms\\ats-winforms\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|solutionrelative:ats-winforms\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ats-winforms\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|solutionrelative:ats-winforms\\asistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ats-winforms\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|solutionrelative:ats-winforms\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ats-winforms\\huella.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|solutionrelative:ats-winforms\\huella.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ats-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|solutionrelative:ats-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ats-winforms\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|solutionrelative:ats-winforms\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ats-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C3DC3F18-BF0F-4596-8269-7F07348DDA09}|ATS-WinForms\\ATS-WinForms.csproj|solutionrelative:ats-winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Huella.cs",
+              "DocumentMoniker": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Huella.cs",
+              "RelativeDocumentMoniker": "ATS-WinForms\\Huella.cs",
+              "ToolTip": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Huella.cs",
+              "RelativeToolTip": "ATS-WinForms\\Huella.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowIYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T02:35:00.117Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Usuario.cs",
+              "RelativeDocumentMoniker": "ATS-WinForms\\Usuario.cs",
+              "ToolTip": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Usuario.cs",
+              "RelativeToolTip": "ATS-WinForms\\Usuario.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T01:12:11.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SesionActual.cs",
+              "DocumentMoniker": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\SesionActual.cs",
+              "RelativeDocumentMoniker": "ATS-WinForms\\SesionActual.cs",
+              "ToolTip": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\SesionActual.cs",
+              "RelativeToolTip": "ATS-WinForms\\SesionActual.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T10:48:54.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Asistencia.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Asistencia.cs",
+              "RelativeDocumentMoniker": "ATS-WinForms\\Asistencia.cs",
+              "ToolTip": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Asistencia.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ATS-WinForms\\Asistencia.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T02:17:30.685Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Menu.cs",
+              "RelativeDocumentMoniker": "ATS-WinForms\\Menu.cs",
+              "ToolTip": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Menu.cs",
+              "RelativeToolTip": "ATS-WinForms\\Menu.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAYwEIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T02:12:49.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Menu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Menu.cs",
+              "RelativeDocumentMoniker": "ATS-WinForms\\Menu.cs",
+              "ToolTip": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Menu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ATS-WinForms\\Menu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T02:11:17.242Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Asistencia.cs",
+              "DocumentMoniker": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Asistencia.cs",
+              "RelativeDocumentMoniker": "ATS-WinForms\\Asistencia.cs",
+              "ToolTip": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Asistencia.cs",
+              "RelativeToolTip": "ATS-WinForms\\Asistencia.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAkwOYAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T04:22:25.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LOGIN.cs",
+              "DocumentMoniker": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\LOGIN.cs",
+              "RelativeDocumentMoniker": "ATS-WinForms\\LOGIN.cs",
+              "ToolTip": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\LOGIN.cs",
+              "RelativeToolTip": "ATS-WinForms\\LOGIN.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAuwIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T03:28:01.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Huella.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Huella.cs",
+              "RelativeDocumentMoniker": "ATS-WinForms\\Huella.cs",
+              "ToolTip": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\Huella.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ATS-WinForms\\Huella.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T01:24:36.435Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LOGIN.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\LOGIN.cs",
+              "RelativeDocumentMoniker": "ATS-WinForms\\LOGIN.cs",
+              "ToolTip": "C:\\Users\\elvin\\OneDrive\\Desktop\\Attendance-Tracking-System\\Attendance-Tracking-System\\winforms\\ATS-WinForms\\ATS-WinForms\\LOGIN.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ATS-WinForms\\LOGIN.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T01:23:47.622Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

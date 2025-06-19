@@ -1,0 +1,112 @@
+<div class="header flex flex-col md:flex-row justify-between items-center mb-6 p-4 sm:p-6 bg-white rounded-lg shadow-lg">
+    <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-800 flex-1 mb-4 md:mb-0 md:mr-4 text-center md:text-left">
+        Gestión de Instituciones
+    </h1>
+
+    <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 w-full md:w-auto">
+        <p-dropdown
+            [options]="filterOptions"
+            optionLabel="name"
+            placeholder="Filtrar por..."
+            [(ngModel)]="selectedFilter"
+            class="w-full md:w-auto">
+        </p-dropdown>
+
+        <input
+            type="text"
+            pInputText
+            [(ngModel)]="filterText"
+            placeholder="Buscar institución"
+            (input)="applyFilter()"
+            class="p-3 border border-gray-300 rounded-lg w-full md:w-64 lg:w-80" />
+    </div>
+</div>
+
+<div class="flex justify-end mb-4 px-4 sm:px-0"> 
+    <button
+        pButton
+        type="button"
+        class="p-button-primary p-button-raised flex items-center"
+        (click)="showAddInstitutionDialog()"> 
+        <span>Añadir Institución</span>
+    </button>
+</div>
+
+<p-table [value]="filteredInstitutions" [tableStyle]="{ 'min-width': '50rem' }">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Distrito</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-institution>
+        <tr>
+            <td>{{ institution.Name }}</td>
+            <td>{{ institution.Address }}</td>
+            <td>{{ institution.RegionalDistrictCode }}</td>
+            <td>{{ institution.SubscriptionStatus }}</td>
+            <td>
+                <button 
+                    pButton 
+                    type="button" 
+                    (click)="editInstitution(institution)"
+                    class="p-button-rounded p-button-text">
+                    <i class="fas fa-edit text-blue-500"></i> </button>
+            </td>
+            
+        </tr>
+    </ng-template>
+</p-table>
+
+<p-dialog 
+    [(visible)]="displayDialog" 
+    [modal]="true" 
+    [closable]="false" 
+    [header]="dialogHeader">
+    <div class="p-fluid">
+        <div class="field mb-4"> <label for="name" class="block mb-1">Nombre</label>
+            <input 
+                id="name" 
+                type="text" 
+                pInputText 
+                [(ngModel)]="selectedInstitution.Name"
+                class="w-full" /> </div>
+        <div class="field mb-4">
+            <label for="address" class="block mb-1">Dirección</label>
+            <input 
+                id="address" 
+                type="text" 
+                pInputText 
+                [(ngModel)]="selectedInstitution.Address"
+                class="w-full" />
+        </div>
+        <div class="field mb-4">
+            <label for="status" class="block mb-1">Estado</label>
+            <p-dropdown 
+                id="status"
+                [options]="statusOptions" 
+                [(ngModel)]="selectedInstitution.SubscriptionStatus"
+                appendTo="body"  
+                placeholder="Seleccione un estado"
+                class="w-full"> </p-dropdown>
+        </div>
+    </div>
+    <ng-template pTemplate="footer"> <button 
+            pButton 
+            type="button" 
+            label="Cancelar" 
+            icon="pi pi-times" 
+            (click)="cancelDialog()"
+            class="p-button-text"> </button>
+         <button 
+            pButton 
+            type="button" 
+            label="Guardar" 
+            icon="pi pi-check" 
+            (click)="saveInstitution()"
+            class="p-button-success"> </button>
+    </ng-template>
+</p-dialog>

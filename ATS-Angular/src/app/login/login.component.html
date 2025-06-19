@@ -1,0 +1,32 @@
+<div class="backgroud">
+
+    <div class="container">
+
+        <div class="logo">
+            <img src="../../assets/Imgs/image-removebg-preview (4).png" alt="Logo">
+        </div>
+        <div class="login">
+            <h1 class="font-bold text-4xl">Inicia Sesión</h1>
+            <form>
+                <input type="text" [(ngModel)]="username" name="username" placeholder="Usuario" (input)="removeSpaces($event)">
+
+                <div class="password-container">
+                     <input [(ngModel)]="password" name="password" placeholder="Contraseña" (input)="removeSpaces($event)" (keyup.enter)="onLoginClick()" [type]="isPasswordVisible ? 'text' : 'password'">
+
+                    <button type='button' (click)="togglePasswordVisibility()">
+                        <span *ngIf="isPasswordVisible"><img src="../../assets/Imgs/eye-svgrepo-com.png" alt=""></span>
+                        <span *ngIf="!isPasswordVisible"><img src="../../assets/Imgs/eye-off-svgrepo-com.png" alt=""></span>
+                    </button>
+                </div>
+                <div class="botones">
+                    <button type="button" (click)="onLoginClick()">Entrar</button>
+                    <button type="button" (click)="cancelar()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isLoading" class="loading-overlay">
+  <p-progressSpinner strokeWidth="5" fill="transparent" animationDuration="1s" [style]="{ width: '50px', height: '50px' }"></p-progressSpinner>
+</div>
