@@ -1,6 +1,0 @@
-@ATS_ASPNET_HostAddress = http://localhost:5166
-
-GET {{ATS_ASPNET_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
