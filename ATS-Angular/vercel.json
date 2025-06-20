@@ -1,15 +1,5 @@
 {
-    "builds": [
-      {
-        "src": "server.ts",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "dist/ats-angular/browser/**",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      { "src": "/.*", "dest": "server.ts" }
-    ]
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
