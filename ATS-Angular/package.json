@@ -2,13 +2,11 @@
   "name": "ats-angular",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:ATS-Angular": "node dist/ats-angular/server/server.mjs"
+    "dev:ssr": "ng run ats-angular:serve-ssr",
+    "build:ssr": "ng build && ng run ats-angular:server",
+    "serve:ssr": "node dist/ats-angular/server/main.js"
   },
+
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.3.0",
@@ -22,16 +20,17 @@
     "@angular/router": "^17.3.12",
     "@angular/ssr": "^17.3.5",
     "@capacitor-community/barcode-scanner": "^4.0.1",
+    "@nguniversal/express-engine": "^7.0.2",
     "@tailwindcss/postcss": "^4.0.8",
     "@zxing/ngx-scanner": "^19.0.0",
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.21",
     "chart.js": "^4.4.8",
     "express": "^4.18.2",
-    "postcss": "^8.5.3",
+    "postcss": "^8.5.6",
     "primeng": "17",
     "rxjs": "~7.8.0",
     "sweetalert2": "^11.15.10",
-    "tailwindcss": "^4.0.8",
+    "tailwindcss": "^3.4.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
