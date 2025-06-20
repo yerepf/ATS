@@ -12,5 +12,4 @@
     "routes": [
       { "src": "/.*", "dest": "server.ts" }
     ]
-  }
-  
+}
