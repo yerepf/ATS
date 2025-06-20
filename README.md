@@ -5,7 +5,7 @@ ATS (Attendance Tracking System) es una solución integral para la gestión de a
 ## 🚀 Tecnologías Utilizadas
 |Módulo|Tecnología|
 |--|--|
-|🖥️ Frontend|Angular 17|
+|🖥️ Frontend|Angular v17|
 |🪟 Frontend|WinForms|
 |🔧 Backend|NodeJS|
 |🗄️ Base de Datos|MySQL|
