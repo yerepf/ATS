@@ -3,10 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "ng serve",
-    "dev:ssr": "ng run ats-angular:serve-ssr",
-    "build": "ng build --configuration production",
-    "build:ssr": "ng build && ng run ats-angular:server",
-    "serve:ssr": "node dist/ats-angular/server/main.js"
+    "build": "ng build --configuration production"
   },
   "private": true,
   "dependencies": {
