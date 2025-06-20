@@ -30,11 +30,8 @@
               "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": ["node_modules/chart.js/dist/chart.umd.js"],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "prerender": false,
+            "ssr": false
           },
           "configurations": {
             "production": {
